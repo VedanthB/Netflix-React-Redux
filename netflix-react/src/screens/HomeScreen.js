@@ -1,4 +1,5 @@
 import React from 'react'
+import Banner from '../components/Banner'
 import Nav from '../components/Nav'
 
 function HomeScreen() {
@@ -9,6 +10,7 @@ function HomeScreen() {
            
 
              {/* banner */}
+             <Banner />
 
 
              {/* row */}
