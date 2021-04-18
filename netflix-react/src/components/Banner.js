@@ -2,6 +2,7 @@ import axios from '../axios';
 import React, { useEffect, useState } from 'react'
 import requests from '../Requests';
 import './Banner.css'
+import TypeWriter from "react-typewriter";
 
 
 
@@ -40,7 +41,10 @@ function Banner() {
        > 
        <div className='banner__contents' > 
           <h1 className='banner__title' >
-               {movie?.title || movie?.name || movie?.original_name }
+              <TypeWriter typing={0.5} >
+                  {movie?.title || movie?.name || movie?.original_name } 
+                  </TypeWriter>
+               
            </h1>
 
              <div className='banner__buttons' >
